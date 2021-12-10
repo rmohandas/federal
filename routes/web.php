@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/veiculos/novo', 'VeiculosController@create');
+Route::post('/veiculos/novo', 'VeiculosController@store')->name('registrar_veiculo');
+
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
