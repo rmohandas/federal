@@ -20,6 +20,7 @@
   <form action="{{ route('registrar_veiculo') }} " method="POST">
     @csrf
     <div class="form-goroup">
+   
       <label for="exampleInputProprietario">Proprietário:</label>
       <input type="text" name="proprietario" class="form-control" id="exampleInputProprietario" aria-describedby="emailHelp" style="width:50%;" placeholder="Digite o nome do proprietário" > <br>
                 
